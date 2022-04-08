@@ -1,3 +1,13 @@
 {
+<<<<<<< HEAD
   "students": []
+=======
+	"students": [
+		{
+			"name": "Test Student",
+			"instagram": "test",
+			"tagline": "THis is a test"
+		}
+	]
+>>>>>>> fac39cc60d9413c954c8e85f66c048fd0ecb0e51
 }

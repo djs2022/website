@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "students": [
         {
             "Name": "Vachan",
@@ -8,3 +9,13 @@
         }
     ]
 }
+=======
+	"students": [
+		{
+			"name": "Vachan MN-1",
+			"instagram": "vachan_diy_tech",
+			"tagline": "Programmer, Computer geek"
+		}
+	]
+}
+>>>>>>> fac39cc60d9413c954c8e85f66c048fd0ecb0e51
