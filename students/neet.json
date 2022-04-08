@@ -1,13 +1,3 @@
 {
-<<<<<<< HEAD
   "students": []
-=======
-	"students": [
-		{
-			"name": "Lorem",
-			"instagram": "Epsum",
-			"tagline": "Lorem epsum dolor"
-		}
-	]
->>>>>>> fac39cc60d9413c954c8e85f66c048fd0ecb0e51
 }

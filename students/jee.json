@@ -1,15 +1,4 @@
 {
-<<<<<<< HEAD
-    "students": [
-        {
-            "Name": "Vachan",
-            "instagram": "@vachan_diy_tech",
-            "tagline": "asdasdasdas",
-            "img_link": "https://i.imgur.com/pzmtAPs.png"
-        }
-    ]
-}
-=======
 	"students": [
 		{
 			"name": "Vachan MN-1",
@@ -18,4 +7,3 @@
 		}
 	]
 }
->>>>>>> fac39cc60d9413c954c8e85f66c048fd0ecb0e51
