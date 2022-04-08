@@ -37,29 +37,6 @@
 
 <body>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script>
-    async function getPhoto(a) {
-      var photoURL = "https://i.imgur.com/9N1y4zs.gif";
-      // validation for instagram usernames
-      var regex = new RegExp(/^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$/);
-      var validation = regex.test(a);
-
-      if (validation) {
-        axios.get(`https://www.instagram.com/${a}/?__a=1`)
-          .then(function (response) {
-            var data = response.data;
-            var profile_pic_url = data.graphql.user.profile_pic_url_hd;
-            photoURL = profile_pic_url;
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-        //photoURL = d_json["graphql"]["user"]["profile_pic_url_hd"];
-      }
-      return photoURL;
-    }
-
-  </script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center ">
@@ -152,8 +129,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src alt="vachan_diy_tech" class="img-fluid"
-                onerror="this.onerror = null; this.src=getPhoto('vachan_diy_tech');">
+              <img alt="vachan_diy_tech" class="img-fluid" src="https://i.imgur.com/pzmtAPs.png">
               <div class="details">
                 <h3><a href="https://instagram.com/vachan_diy_tech">Vachan MN</a></h3>
                 <p>Random individual.</p>
@@ -194,15 +170,16 @@
                 jeeData = response.data;
                 students = jeeData.students;
                 for (let student in students) {
-                  let name = students[student].name;
+                  let name = students[student].Name;
                   let instagram = students[student].instagram;
                   let tagline = students[student].tagline;
+                  let img_link = students[student].img_link;
                   let html = `<div class="row schedule-item">
                                 <div class="col-md-10">
                                   <div class="speaker">
-                                    <img src="${getPhoto(instagram)}" alt="${name}">
+                                    <img src="${img_link}" alt="${name}">
                                   </div>
-                                  <h4><span>${name}(@${instagram})</span></h4>
+                                  <h4><span>${name}(${instagram})</span></h4>
                                   <p>${tagline}</p>
                                 </div>
                               </div>`;
@@ -221,15 +198,16 @@
                 jeeData = response.data;
                 students = jeeData.students;
                 for (let student in students) {
-                  let name = students[student].name;
+                  let name = students[student].Name;
                   let instagram = students[student].instagram;
                   let tagline = students[student].tagline;
+                  let img_link = students[student].img_link;
                   let html = `<div class="row schedule-item">
                                             <div class="col-md-10">
                                               <div class="speaker">
-                                                <img src="${getPhoto(instagram)}" alt="${name}">
+                                                <img src="${img_link}" alt="${name}">
                                               </div>
-                                              <h4><span>${name}(@${instagram})</span></h4>
+                                              <h4><span>${name}(${instagram})</span></h4>
                                               <p>${tagline}</p>
                                             </div>
                                           </div>`;
@@ -247,15 +225,16 @@
                 jeeData = response.data;
                 students = jeeData.students;
                 for (let student in students) {
-                  let name = students[student].name;
+                  let name = students[student].Name;
                   let instagram = students[student].instagram;
                   let tagline = students[student].tagline;
+                  let img_link = students[student].img_link;
                   let html = `<div class="row schedule-item">
                                                         <div class="col-md-10">
                                                           <div class="speaker">
-                                                            <img src="${getPhoto(instagram)}" alt="${name}">
+                                                            <img src="${img_link}" alt="${name}">
                                                           </div>
-                                                          <h4><span>${name}(@${instagram})</span></h4>
+                                                          <h4><span>${name}(${instagram})</span></h4>
                                                           <p>${tagline}</p>
                                                         </div>
                                                       </div>`;
