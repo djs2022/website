@@ -1,9 +1,34 @@
 {
-	"students": [
-		{
-			"name": "Vachan MN-1",
-			"instagram": "vachan_diy_tech",
-			"tagline": "Programmer, Computer geek"
-		}
-	]
+    "students": [
+        {
+            "Name": "Vachan MN",
+            "instagram": "@vachan_diy_tech",
+            "tagline": "Codes.",
+            "img_link": "https://i.imgur.com/prdHaVN.jpg"
+        },
+        {
+            "Name": "Arpit Varshney ",
+            "instagram": "@arpit05101",
+            "tagline": "The UP guy",
+            "img_link": "https://i.imgur.com/6kqrNK3.jpg"
+        },
+        {
+            "Name": "Tejas.MD",
+            "instagram": "tejas.md",
+            "tagline": "Jai Shree Ram \ud83d\udea9",
+            "img_link": "https://i.imgur.com/VmNSp8G.jpg"
+        },
+        {
+            "Name": "Chethan Lucky",
+            "instagram": "@ig_chethanlucky",
+            "tagline": "Chal!!! Bhosidike...",
+            "img_link": "https://i.imgur.com/1oVwzoB.jpg"
+        },
+        {
+            "Name": "Tanvi V Shayana",
+            "instagram": "@tan_shay22 ",
+            "tagline": "Enthusiastic and lazy at the same time :3",
+            "img_link": "https://i.imgur.com/sZ9rSXi.jpg"
+        }
+    ]
 }
