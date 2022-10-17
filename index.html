@@ -168,9 +168,10 @@
                   let tagline = students[student].tagline;
                   let img_link = students[student].img_link;
                   let html = `<div class="row schedule-item">
+                                <div class="col-md-2">${name}</div>
                                 <div class="col-md-10">
                                   <div class="speaker">
-                                    <img src="${img_link}" alt="${name}">
+                                    <img src="${img_link}" alt="${name}" class="img-fluid">
                                   </div>
                                   <h4><span>${name}(${instagram})</span></h4>
                                   <p>${tagline}</p>
@@ -183,7 +184,7 @@
 
           </div>
           <!-- End Schdule Day 1 -->
-<!--         </div> -->
+        </div>
 
       </div>
 
